@@ -44,6 +44,8 @@ FileUtils.cp_r oldModule, newModule
 puts "Deleting target folder..."
 targetFolder = newModule + "/target"
 FileUtils.rm_rf(targetFolder)
+oldIml = newModule + "/" + oldModule + ".iml"
+FileUtils.rm_rf(oldIml)
 
 # Not suitable for production code as data loss can occur
 puts "Replacing old module name in pom.xml..."
