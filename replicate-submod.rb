@@ -35,7 +35,7 @@ if newModule.nil?
   exit
 end
 
-if !Dir.exists?(newModule)
+if !Dir.exists?(oldModule)
   puts "Old module directory does not exist"
 end
 
